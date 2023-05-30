@@ -1,6 +1,6 @@
 <?php
 
-namespace irando\InvisibleReCaptcha\Facades;
+namespace codewithdiki\InvisibleReCaptcha\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

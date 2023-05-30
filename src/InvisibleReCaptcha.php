@@ -1,6 +1,6 @@
 <?php
 
-namespace irando\InvisibleReCaptcha;
+namespace codewithdiki\InvisibleReCaptcha;
 
 use Symfony\Component\HttpFoundation\Request;
 use GuzzleHttp\Client;

@@ -2,12 +2,12 @@
 
 namespace Tests;
 
-use irando\InvisibleReCaptcha\InvisibleReCaptchaServiceProvider;
+use codewithdiki\InvisibleReCaptcha\InvisibleReCaptchaServiceProvider;
 use Illuminate\Container\Container;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\View\Compilers\BladeCompiler;
 use PHPUnit\Framework\TestCase;
-use irando\InvisibleReCaptcha\InvisibleReCaptcha;
+use codewithdiki\InvisibleReCaptcha\InvisibleReCaptcha;
 
 class CaptchaTest extends TestCase
 {
