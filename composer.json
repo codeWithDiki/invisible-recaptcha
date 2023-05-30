@@ -1,5 +1,5 @@
 {
-    "name": "irando/invisible-recaptcha",
+    "name": "codewithdiki/invisible-recaptcha",
     "description": "Invisible reCAPTCHA For Laravel.",
     "keywords": [
         "recaptcha",
@@ -9,36 +9,35 @@
         "invisible-recaptcha",
         "laravel",
         "laravel5",
-        "irando",
-        "cv irando",
+        "codewithdiki",
+        "cv codewithdiki",
         "php",
         "laravel8"
     ],
     "license": "MIT",
     "authors": [
         {
-            "name": "CV. Irando",
-            "homepage": "https://irando.co.id"
+            "name": "Code With Diki"
         }
     ],
     "require": {
         "php": "^5.6.4 || ^7.0|| ^8.0 || ^8.1",
-        "illuminate/support": "^5.0|^6.0|^7.0|^8.0|^9.0",
-        "illuminate/view": "^5.0|^6.0|^7.0|^8.0|^9.0",
+        "illuminate/support": "^5.0|^6.0|^7.0|^8.0|^9.0|^10",
+        "illuminate/view": "^5.0|^6.0|^7.0|^8.0|^9.0|^10",
         "guzzlehttp/guzzle": "^6.2|^7.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8.0|^9.3"
+        "phpunit/phpunit": "^8.0|^9.3|^10"
     },
     "autoload": {
         "psr-4": {
-            "irando\\InvisibleReCaptcha\\": "src/"
+            "codewithdiki\\InvisibleReCaptcha\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "irando\\InvisibleReCaptcha\\InvisibleReCaptchaServiceProvider"
+                "codewithdiki\\InvisibleReCaptcha\\InvisibleReCaptchaServiceProvider"
             ]
         }
     }

@@ -1,7 +1,7 @@
 Invisible reCAPTCHA
 ==========
 ![php-badge](https://img.shields.io/badge/php-%3E%3D%205.6-8892BF.svg)
-[![packagist-badge](https://img.shields.io/packagist/v/irando/invisible-recaptcha.svg)](https://packagist.org/packages/irando/invisible-recaptcha)
+[![packagist-badge](https://img.shields.io/packagist/v/codewithdiki/invisible-recaptcha.svg)](https://packagist.org/packages/codewithdiki/invisible-recaptcha)
 [![Total Downloads](https://poser.pugx.org/irando/invisible-recaptcha/downloads)](//packagist.org/packages/irando/invisible-recaptcha)
 [![Build Status](https://travis-ci.com/robertnicjoo/invisible-recaptcha.svg?branch=master)](https://travis-ci.com/robertnicjoo/invisible-recaptcha)
 [![License](https://poser.pugx.org/irando/invisible-recaptcha/license)](//packagist.org/packages/irando/invisible-recaptcha)
@@ -18,6 +18,7 @@ In reCAPTCHA v2, users need to click the button: "I'm not a robot" to prove they
 
 |   Supported Laravel Versions	|
 |-------------------	|
+|        10.x        	|
 |        9.x        	|
 |        8.x        	|
 |        7.x        	|
@@ -26,7 +27,7 @@ In reCAPTCHA v2, users need to click the button: "I'm not a robot" to prove they
 ## Installation
 
 ```
-composer require irando/invisible-recaptcha
+composer require codewithdiki/invisible-recaptcha
 ```
 
 ## Laravel 5
@@ -36,7 +37,7 @@ composer require irando/invisible-recaptcha
 Add ServiceProvider to the providers array in `app/config/app.php`.
 
 ```
-irando\InvisibleReCaptcha\InvisibleReCaptchaServiceProvider::class,
+codewithdiki\InvisibleReCaptcha\InvisibleReCaptchaServiceProvider::class,
 ```
 
 > It also supports package discovery for Laravel 5.5.
@@ -166,7 +167,7 @@ $config['recaptcha.options'] = [
 
 In controller, use:
 ```php
-$data['captcha'] = new \irando\InvisibleReCaptcha\InvisibleReCaptcha(
+$data['captcha'] = new \codewithdiki\InvisibleReCaptcha\InvisibleReCaptcha(
     $this->config->item('recaptcha.sitekey'),
     $this->config->item('recaptcha.secret'),
     $this->config->item('recaptcha.options'),
@@ -201,7 +202,7 @@ $options = [
     'timeout' => 5,
     'debug' => false
 ];
-$captcha = new \irando\InvisibleReCaptcha\InvisibleReCaptcha($siteKey, $secretKey, $options);
+$captcha = new \codewithdiki\InvisibleReCaptcha\InvisibleReCaptcha($siteKey, $secretKey, $options);
 
 // you can override single option config like this
 $captcha->setOption('debug', true);
@@ -272,6 +273,6 @@ Repo: https://github.com/robertnicjoo/invisible-recaptcha
 
 This repo demonstrates how to use this package with ajax way.
 
-By: [CV. Irando](https://irando.co.id)
+By: [CV. codewithdiki](https://invoiceku.id)
 
 Forked and improved from [albertcht invisible recaptcha](https://github.com/albertcht/invisible-recaptcha)
